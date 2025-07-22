@@ -45,16 +45,16 @@ export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 
 #export NODE_OPTIONS=--openssl-legacy-provider
 
-export MYSQL_ROOT_PASSWORD=******
+#export MYSQL_ROOT_PASSWORD=******
 
 export ANTQ_DEFAULT_TIMEOUT=30000
 
 export CLOJARS_USERNAME=seancorfield
-export CLOJARS_PASSWORD=CLOJARS_******
+#export CLOJARS_PASSWORD=CLOJARS_******
 # clojure-example-library:
-export CEL_TOKEN=CLOJARS_******
+#export CEL_TOKEN=CLOJARS_******
 
-export ZULIP_AUTH='sean@corfield.org:******'
+#export ZULIP_AUTH='sean@corfield.org:******'
 alias zulip_events='clojure -Sdeps '"'"'{:deps {clojurians-zulip/feeds {:git/url "https://gitlab.com/clojurians-zulip/feeds.git" :sha "7f6dfa52631639faedb8993d8c3de666ccdb22bd"}} :aliases {:cli/events {:main-opts ["-m" "inclined.main" "--ns" "clojurians-zulip.events" "--"]}}}'"'"' -M:cli/events'
 
 #export GOOGLE_APPLICATION_CREDENTIALS=/var/www/worldsingles/build/config/******.json
