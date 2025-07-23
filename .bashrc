@@ -141,11 +141,10 @@ _bb_complete() {
 
 complete -o nospace -F _bb_complete bb
 
+[[ -e ~/bin ]] && export PATH=$PATH:~/bin
 export PATH="$PATH:$HOME/.dotnet/tools"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# added by pipx (https://github.com/pipxproject/pipx)
-export PATH="/home/sean/.local/bin:$PATH"
+[[ -e ~/.local/bin ]] && export PATH=$PATH:~/.local/bin
