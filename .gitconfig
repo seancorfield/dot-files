@@ -1,0 +1,32 @@
+[pull]
+	rebase = false
+[gpg]
+	format = ssh
+[init]
+	defaultBranch = develop
+[alias]
+	history = log --pretty=format:\"%h %s %an %ar\" --graph
+[core]
+	editor = code --wait
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[diff]
+	algorithm = histogram
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[versionsort]
+	suffix = -alpha
+	suffix = -beta
+	suffix = -rc
