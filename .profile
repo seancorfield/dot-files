@@ -75,6 +75,8 @@ export NR_AGENT="-javaagent:$NR_JAR -Dnewrelic.environment=$NR_ENV -Dnewrelic.co
 export LUCEE_HEAP=1G
 
 export OPENJDK8_HOME=/Developer/jdk8u332-b09
+export OPENJDK11_HOME=/Developer/jdk-11.0.28+6
+export OPENJDK17_HOME=/Developer/jdk-17.0.16+8
 export OPENJDK18_HOME=/Developer/jdk-18.0.2+9
 export OPENJDK19_HOME=/Developer/jdk-19.0.2+7
 export OPENJDK20_HOME=/Developer/jdk-20.0.1+9
@@ -84,6 +86,9 @@ export OPENJDK24_HOME=/Developer/jdk-24.0.1+9
 
 export JAVA_HOME=$OPENJDK24_HOME
 export JAVA_CMD=$JAVA_HOME/bin/java
+
+# until nREPL supports XDG:
+export NREPL_CONFIG_DIR=$HOME/.config/nrepl
 
 export IRCNICK=seancorfield
 export IRCSERVER=irc.libera.chat
