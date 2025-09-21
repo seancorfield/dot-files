@@ -63,6 +63,9 @@ alias zulip_events='clojure -Sdeps '"'"'{:deps {clojurians-zulip/feeds {:git/url
 #export AWS_SECRET_ACCESS_KEY=******
 export AWS_DEFAULT_REGION=us-east-1
 
+#export CLJ_WATSON_ANALYZER_OSSINDEX_USER="******"
+#export CLJ_WATSON_ANALYZER_OSSINDEX_PASSWORD="******"
+
 export LOG4J_CONFIGURATION_FILE=/var/www/worldsingles/development/resources/log4j2-test.properties
 
 export FORCE_POLLING_ONLY=true
