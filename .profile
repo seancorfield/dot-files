@@ -86,8 +86,9 @@ export OPENJDK20_HOME=/Developer/jdk-20.0.1+9
 export OPENJDK21_HOME=/Developer/jdk-21.0.1+12
 export OPENJDK23_HOME=/Developer/jdk-23
 export OPENJDK24_HOME=/Developer/jdk-24.0.1+9
+export OPENJDK25_HOME=/Developer/jdk-25
 
-export JAVA_HOME=$OPENJDK24_HOME
+export JAVA_HOME=$OPENJDK25_HOME
 export JAVA_CMD=$JAVA_HOME/bin/java
 
 # until nREPL supports XDG:
