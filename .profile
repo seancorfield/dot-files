@@ -91,9 +91,6 @@ export OPENJDK25_HOME=/Developer/jdk-25
 export JAVA_HOME=$OPENJDK25_HOME
 export JAVA_CMD=$JAVA_HOME/bin/java
 
-# until nREPL supports XDG:
-export NREPL_CONFIG_DIR=$HOME/.config/nrepl
-
 export IRCNICK=seancorfield
 export IRCSERVER=irc.libera.chat
 
