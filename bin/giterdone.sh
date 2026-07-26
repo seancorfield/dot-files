@@ -14,6 +14,7 @@ case "$1" in
     ;;
 esac
 
+cd # go home first since this is all relative:
 for r in .config/clojure oss/* oss/*/public workspace/*
 do
   ( echo === $r === && cd $r && git pull -f && git $ops )
